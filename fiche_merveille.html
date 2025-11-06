@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Merveille Perside ABOUROU - OuscouShop</title>
+        <link rel="stylesheet" href="../styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudfare./ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+    <body>
+        <!-- Header-->
+        <header>
+            <div class="logo">
+                <img src="../assets/logo.jpg" alt="Logo OuscouShop">OuscouShop
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../indexchat.html">Accueil</a></li>
+                    <li><a href="../catalogue.html">catalogue</a></li>
+                    <li><a href="../nous.html" class="active">A propos</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--Fiche membre-->
+        <main class="member-profile">
+            <div class="profile-card">
+                <div class="profile-header">
+                    <img id="memberPhoto" src="../assets/team/merveille.jpg" alt="Merveille Perside ABOUROU">
+                    <h1>Merveille Perside ABOUROU</h1>
+                    <h3>Responsable des ventes</h3>
+                </div>
+
+                <!-- Popup image -->
+                <div class="image-popup" id="imagePopup">
+                    <img id="memberPhoto" src="../assets/team/merveille.jpg" alt="Merveille Perside ABOUROU">
+                </div>
+
+                <div classe="profil-body">
+                    <p>
+                        Pilier commercial d'OuscouShop, <strong>Merveille Perside ABOUROU</strong> se distingue par ssa détermination, 
+                        son sens du relationnel et son engagement envers la satisfaction du client. <br>
+                        En tant que <strong>Responsable des ventes</strong>, elle coordonne les activités commerciales 
+                        analyse les besoins du marché et veille à offrir à chaque client une expérience d'achat fluide et 
+                        agréable.
+                    </p>
+
+                    <p>
+                        Grace à sa compréhension fine des attentes des consommateurs et son approche humaine du commerce, 
+                        Merveille contribue directement à la croissance et à la fidélisation de la clientèle d'OuscouShop.
+                    </p>
+
+                    <p>
+                        <strong>Formation :</strong>Baccalauréat série D au lycée Barthélémy BOGANDA, Bangui.<br>
+                        <strong>Compétences clés :</strong>Vente, négociation, gestion client, planification commerciale.<br>
+                        <strong>Valeurs professionnelles :</strong> Discipline, efficacité et recherche constante de la perfection.
+                    </p>
+
+                    <div class="profile-contact">
+                        <p><i class="fas fa-envelope"></i>persidabourou@gmail.com</p>
+                        <p><i class="fas fa-phone"></i>+236 72 24 06 76</p>
+                        <p><i class="fasb fa-whatsapp"></i> <a href="https://wa.me/23672240676" target="_blank">Contacter sur WhatsApp</a></p>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <a href="../nous.html" class="btn btn-secondary back-btn">← Retour à l'équipe</a>
+            </div>
+        </main>
+
+        <!--Footer-->
+        <footer class="site-footer">
+            <div class="footer-inner">
+                <p>&copy; 2025 OuscouShop. Tous droits reservés</p>
+                <div class="footer-nav">
+                    <a href="../nous.html">A propos</a>
+                    <a href="../contact.html">Contact</a>
+                    <a href="../nous.html#mentions">Mentions légales</a>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            const photo = document.getElementById('memberPhoto');
+            const popup = document.getElementById('imagePopup');
+        
+            // Ouvrir l'image
+            photo.addEventListener('click', () => {
+                popup.style.display = 'flex';
+            });
+        
+            // Fermer l'image quand on clique dessus
+            popup.addEventListener('click', () => {
+                popup.style.display = 'none';
+            });
+        </script>
+    </body>
+</html>

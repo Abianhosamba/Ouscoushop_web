@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Montre - OuscouShop</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="../assets/logo.jpg" alt="Logo OuscouShop">
+      OuscouShop
+    </div>
+    <nav>
+      <ul>
+        <li><a href="../indexchat.html">Accueil</a></li>
+        <li><a href="../catalogue.html" class="active">Catalogue</a></li>
+        <li><a href="../nous.html">À propos</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Fiche produit -->
+  <main class="section">
+    <h1>Montre élégante</h1>
+
+    <div class="product-card product-page">
+      <img src="../assets/products/montre.jpg" alt="Montre élégante">
+      <h2>Rolex</h2>
+      <p class="price">50 000FCFA</p>
+      <p>
+        Affirmez votre style avec cette montre élégante au design raffiné. Plus qu'un simple accesoire, c'est la touche
+        finale qui sublime votre allure.
+      </p>
+      <a href="https://wa.me/23672739271" target="_blank" class="btn btn-primary">Commander via WhatsApp</a>
+    </div>
+
+    <div style="text-align:center; margin-top:30px;">
+      <a href="../catalogue.html" class="btn btn-secondary">← Retour au Catalogue</a>
+    </div>
+  </main>
+
+      <!-- Fenêtre popup -->
+      <div class="image-popup" id="imagePopup">
+        <img id="imagePopup" src="../assets/products/montre.jpg" alt="Montre élégante">
+      </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>&copy; 2025 OuscouShop. Tous droits réservés.</p>
+      <div class="footer-nav">
+        <a href="../nous.html">À propos</a>
+        <a href="../contact.html">Contact</a>
+        <a href="../nous.html#mentions">Mentions légales</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const productPhoto = document.getElementById('productPhoto');
+    const imagePopup = document.getElementById('imagePopup');
+  
+    // Afficher le popup
+    productPhoto.addEventListener('click', () => {
+      imagePopup.style.display = 'flex';
+    });
+  
+    // Fermer le popup
+    imagePopup.addEventListener('click', () => {
+      imagePopup.style.display = 'none';
+    });
+  </script>
+  
+</body>
+</html>

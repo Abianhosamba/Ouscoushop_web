@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Catalogue - OuscouShop</title>
+  <meta name="description" content="Catalogue OuscouShop - vêtements, chaussures et accessoires" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo"><img src="assets/logo.jpg" alt="OuscouShop logo"> OuscouShop</div>
+    <nav><ul>
+      <li><a href="indexchat.html">Accueil</a></li>
+      <li><a href="catalogue.html" class="active">Catalogue</a></li>
+      <li><a href="nous.html">À propos</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul></nav>
+  </header>
+
+  <main class="section fade-up">
+    <h1>Notre Catalogue</h1>
+
+    <div class="filters" style="margin:18px 0 28px;">
+      <div class="filter-group">
+        <input id="catalogSearch" type="text" placeholder="Rechercher un produit..." />
+      </div>
+      <div class="filter-group">
+        <select id="catalogCategory">
+          <option value="all">Toutes les catégories</option>
+          <option value="vetements">Vêtements</option>
+          <option value="chaussures">Chaussures</option>
+          <option value="accessoires">Accessoires</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="grid products">
+      <div class="product-card" data-category="vetements">
+        <img class="clickable-img" data-large="assets/products/tshirt-1.jpg" src="assets/products/tshirt-1.jpg" alt="T-shirt tendance">
+        <h3>T-shirt tendance</h3>
+        <p class="price">5 000 FCFA</p>
+        <a class="btn btn-primary" href="produits/tshirt.html">Voir</a>
+      </div>
+
+      <div class="product-card" data-category="chaussures">
+        <img class="clickable-img" data-large="assets/products/chaussure-1.png" src="assets/products/chaussure-1.png" alt="Chaussure sport">
+        <h3>Chaussures de sport</h3>
+        <p class="price">18 000 FCFA</p>
+        <a class="btn btn-primary" href="produits/chaussuree.html">Voir</a>
+      </div>
+
+      <div class="product-card" data-category="accessoires">
+        <img class="clickable-img" data-large="assets/products/montree.jpg" src="assets/products/montre.jpg" alt="Montre élégante">
+        <h3>Montre élégante</h3>
+        <p class="price">15 000 FCFA</p>
+        <a class="btn btn-primary" href="produits/montree.html">Voir</a>
+      </div>
+
+      <div class="product-card" data-category="accessoires">
+        <img class="clickable-img" data-large="assets/products/casque-1.jpg" src="assets/products/casque-1.jpg" alt="Casque Bluetooth">
+        <h3>Casque Bluetooth</h3>
+        <p class="price">20 000 FCFA</p>
+        <a class="btn btn-primary" href="produits/casque_bluetooth.html">Voir</a>
+      </div>
+
+      <div class="product-card" data-category="vetements">
+        <img class="clickable-img" data-large="assets/products/sac.jpg" src="assets/products/sac_a_main-1.jpg" alt="Sac à main">
+        <h3>Sac à main</h3>
+        <p class="price">12 000 FCFA</p>
+        <a class="btn btn-primary" href="produits/sacamain.html">Voir</a>
+      </div>
+
+      <div class="product-card" data-category="vetements">
+        <img class="clickable-img" data-large="assets/products/nuisette1.jpg" src="assets/products/nuisette1.jpg" alt="Nuisette">
+        <h3>Nuisette</h3>
+        <p class="price">8 000 FCFA</p>
+        <a class="btn btn-primary" href="produits/nuisette.html">Voir</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>&copy; 2025 OuscouShop. Tous droits réservés.</p>
+      <div class="footer-nav"><a href="nous.html">À propos</a> <a href="contact.html">Contact</a> <a href="mentions.html">Mentions légales</a></div>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
